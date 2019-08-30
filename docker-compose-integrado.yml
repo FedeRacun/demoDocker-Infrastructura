@@ -1,0 +1,30 @@
+version: "3"
+services:
+
+#Los puertos tanto back como front en este archivo solo funcionan al elegir la opcion "3) Desplegar Ambos entornos"
+# si se desea solo levantar el frontend o el backend de forma individual, buscar el docker-compose.yml correspondiente
+# a cada entorno ej: ./frontend/docker-compose.yml y ahi se encuentra la configuracion individual de los puertos
+ backend-node:
+   build: ./backend/nodejs
+   ports:
+    - "5000:5000"
+   volumes:
+    - ${BACK}:/app
+
+   networks:
+      - front-certi
+ frontend-node:
+   build: ./frontend
+   container_name: 'frontend-node'
+   ports:
+     - 4200:4200
+     - 5001:5001
+     - 3000:3000
+   volumes:
+   - ${FRONT}:/frontend
+
+   networks:
+      - front-certi
+networks:
+  front-certi:
+    driver: bridge

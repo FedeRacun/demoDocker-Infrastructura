@@ -1,0 +1,11 @@
+frontend-node:
+  build: .
+  container_name: 'frontend-node'
+#  restart: always
+# Estos puertos los utiliza solo al elegir la opcion "1) Desplegar Docker solo  Frontend"
+  ports:
+   - 4200:4200
+   - 5001:5001
+   - 3000:3000
+  volumes:
+   - "${FRONT}:/frontend"
