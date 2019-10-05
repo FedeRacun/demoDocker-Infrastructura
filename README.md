@@ -1,7 +1,7 @@
 # Utilizar Despligue de Entornos 
 
 ### Configurar el archivo  "Configuration" con las variables necesarias y sus respectivos volumenes.
-Se debe tener clonado el repositorio/s con el que se va a trabajar
+Se debe tener clonado el repositorio/s con el que se va a trabajar  
 
 ```
 #Volumenes:
