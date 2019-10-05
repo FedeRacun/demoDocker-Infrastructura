@@ -1,6 +1,5 @@
 # Utilizar Despligue de Entornos 
 
-## Maintained by: [Equipo DevOps]
 ### Configurar el archivo  "Configuration" con las variables necesarias y sus respectivos volumenes.
 Se debe tener clonado el repositorio/s con el que se va a trabajar
 
@@ -35,7 +34,6 @@ Para ejecutar dichos ejemplos no debe olvidarse de utilizar los path correspondi
 
 # Usar compose
 
-## Maintained by: [Equipo DevOps]
 ### Construir imagenes
  `docker-compose build`.
 ### Iniciar instancias
